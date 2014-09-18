@@ -1,0 +1,12 @@
+--- orig/99elementalx	2014-06-10 21:03:24.000000000 +0200
++++ modified/99elementalx	2014-09-07 22:36:23.330042021 +0200
+@@ -199,4 +199,9 @@
+ #update saved config
+ cp /system/etc/elementalx.conf /sdcard/.elementalx.backup
+ 
++# Torch
++# https://github.com/AOSPA/android_device_lge_hammerhead/commit/26fde48a0964613eceb7ec73b8b7536c0223ce20
++chown system camera /sys/class/leds/led:flash_torch/brightness
++chmod 0666 /sys/class/leds/led:flash_torch/brightness
++
+ exit 0
