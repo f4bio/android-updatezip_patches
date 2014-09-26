@@ -8,9 +8,11 @@ shift
 case $key in
     -l|--lightbulb)
     export LIGHTBULB=true
+    # shift
     ;;
     -f|--f2fsall)
     export F2FSALL=true
+    # shift
     ;;
     *)
             # unknown option
@@ -56,9 +58,9 @@ fi
 
 echo -e "### lightbulb ###"
 if [ "$LIGHTBULB" ]; then
-	sh -c "$SCRIPTSDIR/elementalx_lightbulb.sh"
+	sh -c "$SCRIPTSDIR/any_lightbulb.sh"
 else
-	echo -e "\t-> skipped!"
+	echo -e "-> skipped!"
 fi
 
 echo -e "signing zip... \c"
