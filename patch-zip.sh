@@ -60,7 +60,7 @@ echo -e "### lightbulb ###"
 if [ "$LIGHTBULB" ]; then
 	sh -c "$SCRIPTSDIR/any_lightbulb.sh"
 else
-	echo -e "-> skipped!"
+	echo -e "\t -> skipped!"
 fi
 
 echo -e "signing zip... \c"
